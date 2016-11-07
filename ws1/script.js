@@ -102,3 +102,4 @@ window.onload = function(){ //När DOM har laddats körs scriptet.
 }
 
 
+
