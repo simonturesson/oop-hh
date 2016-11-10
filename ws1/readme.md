@@ -45,3 +45,8 @@ Först loopas partiklararrayen igenom.
 Partiklen `(p)` är den som jämnförs med de andra som finns på canvas ytan.
 Med hjälp av location ( och adderat radien) jämnförs positionerna på den aktuella partiklen. Med hjälp av en if sats i en if sats bestämmer vi sedan vad som ska hända.
 Om `(If)` radien på en partikel är större än den andra som krockar med partiklen så tas partiklen ut ur arrayen och radien ökas med 2. Den minsta partiklen tas bort. 
+
+---------
+
+**Lärandemål**
+De lärandemål jag kommit i kontakt med är försåelse och redogörelse av begrepp och metoder. Jag har tillämpat metoder och principer för hantering av klasser, objekt, variabler och loopar.
