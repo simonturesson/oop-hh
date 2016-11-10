@@ -1,6 +1,8 @@
 **Hej**
 Här kommer min workshopuppgift och kommentarer till frågorna. Uppgifterna är lösa och besvarade. Jag tror dock att lösning för kollisionen skullle kunna förbättras för prestanda, men har inte lagt tid på det.
 
+----------
+
 
 **Uppgift 1: En funktion skall anropas som gör att alla objekten stannar på den definierade canvas-ytan. Ange nedan steg för steg hur du går till väga. Vilka lösningar finns det?**
 
