@@ -29,47 +29,23 @@ Med hjälp av try & catch kan vi ge användaren feedback på till exempel input.
 
 **Kloning inom PHP**
 Med kloning kan vi klona hela objekt som inte refererar till originalobjektet's innehåll.
+Kopian av orginalet, kan vi modifiera innehållet i och med full säkerhet veta att originalet inte försötrs. 
 
 
-You could make a copy of the original, and modify your copy with full assurance that your original would remain untouched.
-
-That changed in PHP 5. Now when you assign an object to a new variable. The 2 variables remain inextricably linked.
-
-$object1->title = "Title One";
-$object2 = $object1;
-$object2->title = "Title Two";
-print $object1->title; // returns "Title Two"
-In order to create an actual copy and not simply a reference to an existing object, PHP introduced the clone keyword.
-
-$object1->title = "Title One";
+$object1->title = "hej";
 $object2 = clone $object1;
-$object2->title = "Title Two";
-print $object1->title; // returns "Title One"
+$object2->title = "hej2";
+print $object1->title; // returns "hej"
 
-Now you can modify your newly cloned object to your heart's delight, while keeping intact your original.
 
 **Interceptor**
+Interceptors är en handfull metoder som kan användas i klasser för att snappa upp värden.
+
+http://clivern.com/working-with-php-interceptors/
 
 **Abstrakta klasser och interface**
 Abstrakt klass: En abstrakt klass fördefinierar funktionalitet men tillåter ändringar i SubClasses.
-Interface: Ett Interface kan inteinnehålla funktionalitet, endast definitioner av en metod.
-
-
-Difference between Abstract Class and Interface
-
-Abstract Classes
-
-An abstract class can provide some functionality and leave the rest for derived class
-
-The derived class may or may not override the concrete functions defined in base class
-The child class extended from an abstract class should logically be related
-Interface
-
-An interface cannot contain any functionality. It only contains definitions of the methods
-
-The derived class MUST provide code for all the methods defined in the interface
-
-Completely different and non-related classes can be logically be grouped together using an interface
+Interface: Ett Interface kan inteinnehålla funktionalitet, endast definitioner av en metod. Interface kan ses som ett tomt skal. Där det finns instruktioner om metoder, men utan innehåll. Interfacet i sig kan inte göra något, men det bidrar till ett mönster för att fortsätta utvecklingen.
 
 **Nyckelordet Final**
 Nyckelordet final används i relation till att begränsa funktioner och dess "ChildClasses".
@@ -80,5 +56,34 @@ http://www.hackingwithphp.com/6/7/4/final
    **OO DESIGN**
 
 **Förklara begreppen cohesion, coupling och orthogonality och hur de relaterar till varandra.**
+Orthogonal OO design är grundat på "Cohesion" och "Coupling".  De ska hjälpa till att skapa ett förhållningssätt
+till hållbar kod. Kod & design som kan byggas på och växa, utan att grundläggande funktioner måste förstöras, byggas om eller modifieras.
+
+
+Coupling - Vi vill när vi designar mjukvara undvika coupling så långt vi bara kan. Helst undivka det helt. 
+Coupling innebär att kod blir beroende av annan kod för att fungera. Att element får en löst sammansatt koppling
+som kan vara svår att föjla upp och förstå om en programmerare återvänder till koden långt efter att den skrivits. Coupling kan leda
+till mycket refaktorisering av kod om förändringar behöver göras i framtiden.
+
+Cohesion - Är ett mått på vikten av en funktion i en mjukvara. Beroende på hur många relationer den har och vad som bidrar till dess funktionalitet.
+I en utopi bugger vi bara komponenter som är självdrivande men ändå inte skapar rendunant kod. Vi vill skapa kod som är föränderlig och lättförståelig. 
+För att undvika problem med cohesion försöker vi alltid att undvika generiska klassnamn, och i variabler och klasser beskriva vad som händer, med hjälp av namnet.
+På så sätt undviker vi även problemet med att klassnamn och variablenamn återanvänds i andra delar av koden.
+
 **Polymorfism**
+Poymorfism är möjligheten att använda samma "interface" i flera olika kontext. (För olika datatyper)
+Tex: 
+Om vi har objektet "lärare". 
+ - Lärare har en relation till Studenter
+ - Lärare har en annan relation till sina Chefer. 
+ 
+ Läraren's objekt använder samma "interaface", fast i flera olika kontexter (Relation till student/chef)(datatyper).
+ 
 **Inkapsling (Encapsulation)**
+Inkappsling innebär att vi kan packa in flera metoder i en klass.
+I en inkapsling kan vi samla objekt och metoder, och skydda datan i objektet från andra objekt
+En inkapsling kan liknas vid användande av vardagliga produkter i vår omvärld. 
+Tex: 
+En TV har en "inkapsling"( ett skal / skydd ), men vi kan komma åt funktioner i TV'n utan att ta bort skalet, genom att använda
+en fjärrkontroll. Allt i inkapslingen är skyddat, men vi kan komma åt grundläggande funktioner som "utvecklaren" valt att
+låta oss kontrollera. 
