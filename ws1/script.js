@@ -99,7 +99,7 @@ window.onload = function () { //När DOM har laddats körs scriptet.
             ctx.fill();
             move(p);
             collision(p);
-            ctx.fillText(p.name, p.location.x, p.location.y);
+            ctx.fillText(p.name, p.location.x + 1, p.location.y + 1);
             ctx.stroke();
             ctx.fillStyle = "white";
             console.log(particles[i]);
@@ -109,6 +109,3 @@ window.onload = function () { //När DOM har laddats körs scriptet.
 
     setInterval(draw, 33); //Uppdateringsfrekvens...
 }
-
-
-
