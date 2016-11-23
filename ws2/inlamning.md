@@ -52,6 +52,7 @@ Nyckelordet final används i relation för att definiera att en klass eller funk
 Effektivt för att begränsa andra programmerare att modifiera koden på annat sätt an de du tänkt från början.
 Man kan även begränsa så att det inte går att skapa sub-klasser på klassen/funktionen.
 
+
    **OO DESIGN**
 
 **Förklara begreppen cohesion, coupling och orthogonality och hur de relaterar till varandra.**
