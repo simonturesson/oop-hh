@@ -39,19 +39,18 @@ print $object1->title; // returns "hej"
 
 
 **Interceptor**
-Interceptors är en handfull metoder som kan användas i klasser för att snappa upp värden.
+Interceptors är en handfull fördefinierade metoder som kan användas i klasser.
+Exempel på några av metoderna är:  __construct(), __get() , __set(), , __unset(), __isset(), __call() etc... 
 
-http://clivern.com/working-with-php-interceptors/
 
 **Abstrakta klasser och interface**
 Abstrakt klass: En abstrakt klass fördefinierar funktionalitet men tillåter ändringar i SubClasses.
 Interface: Ett Interface kan inteinnehålla funktionalitet, endast definitioner av en metod. Interface kan ses som ett tomt skal. Där det finns instruktioner om metoder, men utan innehåll. Interfacet i sig kan inte göra något, men det bidrar till ett mönster för att fortsätta utvecklingen.
 
 **Nyckelordet Final**
-Nyckelordet final används i relation till att begränsa funktioner och dess "ChildClasses".
-Final kan användas för att begränsa ytterliga användningsområden för en funktion.
-
-http://www.hackingwithphp.com/6/7/4/final
+Nyckelordet final används i relation för att definiera att en klass eller funktion inte kan skrivas över av en sub-klass.
+Effektivt för att begränsa andra programmerare att modifiera koden på annat sätt an de du tänkt från början.
+Man kan även begränsa så att det inte går att skapa sub-klasser på klassen/funktionen.
 
    **OO DESIGN**
 
