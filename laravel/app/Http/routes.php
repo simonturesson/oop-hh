@@ -11,8 +11,11 @@
 |
 */
 
+Route::resource('product', 'ProductController');
+Route::resource('coffee', 'CoffeeController');
 
 Route::get('/', 'PagesController@home');
 Route::get('/brews', 'PagesController@brews');
 Route::get('/recipes', 'PagesController@recipes');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/admin', 'PagesController@admincoffe');

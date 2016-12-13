@@ -16,6 +16,10 @@ class User extends Model implements AuthenticatableContract,
 {
     use Authenticatable, Authorizable, CanResetPassword;
 
+    public function products(){
+        return $this->hasMany('Product');
+    }
+
     /**
      * The database table used by the model.
      *

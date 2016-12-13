@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>S&P Beerlog</title>
+    <title>Simon's Coffee Log</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/css/main.css" />
@@ -13,7 +13,7 @@
 
     <!-- Header -->
     <header id="header" class="alt">
-        <a href="/" class="logo"><strong>S&P</strong> <span>Beer brewing log</span></a>
+        <a href="/" class="logo"><strong>Simon's</strong> <span>Coffee Log</span></a>
         <!-- Menu -->
         <nav class="menu-links">
             <li><a href="/">Home</a></li>
@@ -31,7 +31,7 @@
     <footer id="footer">
         <div class="inner">
             <ul class="copyright">
-                <li>&copy; S&P Beer</li>
+                <li>&copy; Simon's Coffee Log</li>
             </ul>
         </div>
     </footer>
