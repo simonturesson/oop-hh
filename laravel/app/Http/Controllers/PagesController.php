@@ -36,4 +36,10 @@ class PagesController extends Controller {
         return view('coffees.admincoffe');
 
     }
+    public function coffees()
+    {
+
+        return view('coffees.coffee');
+
+    }
 }

@@ -19,3 +19,7 @@ Route::get('/brews', 'PagesController@brews');
 Route::get('/recipes', 'PagesController@recipes');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/admin', 'PagesController@admincoffe');
+
+Route::get('resizeImage', 'ImageController@resizeImage');
+Route::post('resizeImagePost',['as'=>'resizeImagePost','uses'=>'ImageController@resizeImagePost']);
+
